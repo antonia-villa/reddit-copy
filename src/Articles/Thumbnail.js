@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 class Thumbnail extends Component {
 	render(){
 		return(
-			<div className="thumbnail">
+			<li className="thumbnail">
 				{this.props.imgSrc}
-			</div>
+			</li>
 		)
 	}
 }

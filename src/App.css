@@ -22,18 +22,20 @@
 
 }
 
-ul {
+.reddit-nav-container {
     list-style: none;
     margin-top: 19px;
     position: absolute;
     left: 6em;
 }
 
-li{
+.navItem{
   margin-left: 6px;
   padding: 2px;
   text-transform: lowercase;
   color: #369;
+  display: inline-block;
+  background-color: #EFF7FF;
 }
 
 #selectedNav {
@@ -42,11 +44,6 @@ li{
   border: 1px solid lightgray;
   background-color: white;
 
-}
-
-.navItem {
-  display: inline-block;
-  background-color: #EFF7FF;
 }
 
 /* Banner Styling */
@@ -119,18 +116,27 @@ li{
 
 }
 .thumbnail{
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
   background-color: grey;
   display: inline-block;
+  margin-top:1em;
+  margin-left:1em;
 }
 .article-title{
   display: inline-block;
+  margin-left:3em;
+  font-size:2em;
+  color:#0000ff;
 }
 
 .article-container{
   width:80%;
 }
 
-
+.article-items{
+  margin:0;
+  height:100%;
+  padding:0;
+}
 /*end article items*/
