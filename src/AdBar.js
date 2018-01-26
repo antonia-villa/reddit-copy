@@ -9,12 +9,6 @@ class AdBar extends Component {
 				<div className="first-ad">
 
 	            <div id="carouselIndicators2" className="carousel slide" data-ride="carousel">
-					  <ol className="carousel-indicators">
-					    <li data-target="#carouselIndicators2" data-slide-to="0" className="active"></li>
-					    <li data-target="#carouselIndicators2" data-slide-to="1"></li>
-					    <li data-target="#carouselIndicators2" data-slide-to="2"></li>
-					    <li data-target="#carouselIndicators2" data-slide-to="3"></li>
-					  </ol>
 					  <div className="carousel-inner" role="listbox">
 					    <div className="carousel-item active">
 					      <img className="d-block img-fluid" src="../img/nightlife.jpg" alt="Landing Page" />
@@ -43,12 +37,6 @@ class AdBar extends Component {
 				 </div>
 				<div className="second-ad"> 
     				<div id="carouselIndicators2" className="carousel slide" data-ride="carousel">
-					  <ol className="carousel-indicators">
-					    <li data-target="#carouselIndicators2" data-slide-to="0" className="active"></li>
-					    <li data-target="#carouselIndicators2" data-slide-to="1"></li>
-					    <li data-target="#carouselIndicators2" data-slide-to="2"></li>
-					    <li data-target="#carouselIndicators2" data-slide-to="3"></li>
-					  </ol>
 					  <div className="carousel-inner" role="listbox">
 					    <div className="carousel-item active">
 					      <img className="d-block img-fluid" src="../img/food2.jpg" alt="Landing Page" />
