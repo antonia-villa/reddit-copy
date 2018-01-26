@@ -25,7 +25,7 @@ class App extends Component {
         let postTime = parseFloat(items[i].data.created_utc) *1000;
         let currentTime = new Date();
         let timeSincePost = parseInt(((currentTime-postTime)/(1000*60*60))%24);
-        allArticles.push(<Article subreddit={items[i].data.subreddit} votes={items[i].data.score} author={items[i].data.author} hours={timeSincePost} articleIndex={i+1} imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
+        allArticles.push(<Article postLink={items[i].data.permalink} subreddit={items[i].data.subreddit} votes={items[i].data.score} author={items[i].data.author} hours={timeSincePost} articleIndex={i+1} imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
       }
       this.setState({
         articles:allArticles
