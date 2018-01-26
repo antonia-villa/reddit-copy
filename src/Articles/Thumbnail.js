@@ -4,7 +4,7 @@ class Thumbnail extends Component {
 	render(){
 		return(
 			<li className="thumbnail-wrapper">
-				<img className="thumbnail" src={this.props.imgSrc}/>
+				<a href={this.props.imgSrc}><img className="thumbnail"src={this.props.imgSrc}/></a>
 			</li>
 		)
 	}
