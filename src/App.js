@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './Nav.js'
 import Banner from './Banner.js'
+import AdBar from './AdBar.js'
 
 //Importing Components
 import Article from './Articles/Article.js'
@@ -26,6 +27,7 @@ class App extends Component {
       <div className="App">
       <Nav />
       <Banner />
+      <AdBar />
 
         <div className="article-container">
           {this.articles()}
