@@ -54,7 +54,6 @@ var states =
 "WY"
 ]
 
-
 // For scroll functionality 
 $(function() {
   $('a[href*=#]').on('click', function(e) {

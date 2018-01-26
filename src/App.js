@@ -36,7 +36,7 @@ class App extends Component {
       <div className="App">
       <Nav />
       <Banner />
-
+      <AdBar />
         <div className="article-container">
           {this.state.articles}
         </div>

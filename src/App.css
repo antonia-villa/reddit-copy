@@ -184,7 +184,6 @@ input[type="text"]{
 .side-bar{
   width: 19%;
   position:absolute;
-  background-color: grey;
   height: 800px;
   right: 0;
   margin-right: 5px;
@@ -205,16 +204,17 @@ input[type="text"]{
 
 .new-link {
   margin: 5px;
-  background-color: #90B5D7;
+  background-color: #d0e2f2;
   width: 95%;
+  border-radius: 1px 550px 550px 1px;
 }
 
 .reddit-gold {
   width:93%;
   height: 85px;
-  background-color: gold;
   text-align:center;
   margin: 8px 0 8px 8px;
+  border: 3px double gold;
 }
 
 .second-ad{
@@ -235,4 +235,34 @@ input[type="text"]{
   height:100%;
   padding:0;
 }
+
+.gold-text{
+  font-color: #88816A;
+}
+
+.gold-bar{
+  height: 17px;
+  width: 80%;
+  border: 1px solid #88816A;
+  border-radius: 10px;
+  display: inline-block;
+  
+}
+
+.gold-bar-child{
+  height:15px;
+  width: 66%;
+  background-color:gold;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
