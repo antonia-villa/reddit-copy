@@ -8,8 +8,10 @@ class Article extends Component {
 	render(){
 		return(
 			<div className="article">
+				<ul className="article-items">
 				<Thumbnail imgSrc={this.props.imgSrc} />
 				<Title title={this.props.title} />
+				</ul>
 			</div>
 		);
 	}

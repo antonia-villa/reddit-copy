@@ -7,11 +7,19 @@ import AdBar from './AdBar.js'
 //Importing Components
 import Article from './Articles/Article.js'
 class App extends Component {
-  articles = (len) =>{
+  articles = () =>{
     const allArticles = [];
-    for(let i =0;i<len;i++){
-      allArticles.push(<Article imgSrc="test" title="test" />);
-    }
+    let reqUrl = "https://www.reddit.com/top.json";
+    fetch(reqUrl).then((response)=>{
+      return response.json()
+    }).then((json)=>{
+      let items = json.data.children;
+      for(let i =0;i<items.length;i++){
+        allArticles.push(<Article imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
+      }
+    }).catch((err)=>{
+      console.log("err making fetch request");
+    });
     return allArticles;
   } 
   render() {
@@ -22,7 +30,7 @@ class App extends Component {
       <AdBar />
 
         <div className="article-container">
-          {this.articles(3)}
+          {this.articles()}
         </div>
       </div>
     );

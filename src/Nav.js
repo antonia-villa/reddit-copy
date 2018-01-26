@@ -7,7 +7,7 @@ class Nav extends Component {
 				<div id="reddit-logo">
 					<img id="logo-img" src="./img/reddit.png"/>
 				</div>
-				<ul>
+				<ul className="reddit-nav-container">
 					<li id="selectedNav" className="navItem">Hot</li>
 					<li className="navItem">new</li>
 					<li className="navItem">rising</li>
