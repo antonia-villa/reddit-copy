@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './Nav.js'
 import Banner from './Banner.js'
+import AdBar from './AdBar.js'
+
 
 //Importing Components
 import Article from './Articles/Article.js'
