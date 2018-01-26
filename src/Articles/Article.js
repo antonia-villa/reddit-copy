@@ -9,6 +9,7 @@ class Article extends Component {
 		return(
 			<div className="article">
 				<ul className="article-items">
+				<li className="article-index"><h2>{this.props.articleIndex}</h2></li>
 				<Thumbnail imgSrc={this.props.imgSrc} />
 				<Title title={this.props.title} />
 				</ul>
