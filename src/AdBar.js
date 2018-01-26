@@ -34,7 +34,13 @@ class AdBar extends Component {
 				 </div>
 				<div className="btn new-link"> Submit New Link</div>
 				<div className="btn new-link"> Submit New Text Post</div>
-				<div className="reddit-gold"> daily reddit gold goal</div>
+				<div className="reddit-gold">
+				 	<p className="gold-text">daily reddit gold goal</p>
+				 	<div className="gold-bar">
+				 		<div className="gold-bar-child">
+				 		</div>
+				 	</div>
+				 </div>
 				<div className="second-ad"> 
     				<div id="carouselIndicators2" className="carousel slide" data-ride="carousel">
 					  <ol className="carousel-indicators">
