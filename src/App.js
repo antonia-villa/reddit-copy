@@ -6,7 +6,13 @@ import Banner from './Banner.js'
 //Importing Components
 import Article from './Articles/Article.js'
 class App extends Component {
-  articles = () =>{
+  constructor(props){
+    super(props);
+    this.state = {
+      articles : []
+    }
+  }
+  componentDidMount(){
     const allArticles = [];
     let reqUrl = "https://www.reddit.com/top.json";
     fetch(reqUrl).then((response)=>{
@@ -16,11 +22,13 @@ class App extends Component {
       for(let i =0;i<items.length;i++){
         allArticles.push(<Article imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
       }
+      this.setState({
+        articles:allArticles
+      })
     }).catch((err)=>{
       console.log("err making fetch request");
     });
-    return allArticles;
-  } 
+  }
   render() {
     return (
       <div className="App">
@@ -28,7 +36,7 @@ class App extends Component {
       <Banner />
 
         <div className="article-container">
-          {this.articles()}
+          {this.state.articles}
         </div>
       </div>
     );
