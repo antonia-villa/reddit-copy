@@ -63,7 +63,7 @@ class Banner extends Component {
 	}
 
 	render(){
-		    let optionTemplate = this.state.values.map(v => (
+	let optionTemplate = this.state.values.map(v => (
       <option value={v}>{v}</option>
     ));
 
@@ -81,12 +81,17 @@ class Banner extends Component {
 							<a href="#">reset</a> 
 							<a href="#">password</a>
 						</div>
-						<input type="submit" value="submit" />
+						<div className="loginButton">
+						<input type="submit" value="login" />
+						</div>
 					</div>
 				</form>
 			</div>
 				<div id="menuarea">
 					<span className="dropdown-title">popular in </span>
+					<select value={this.state.value} onChange={this.handleChange}>
+			          {optionTemplate}
+			        </select>
 					<span className="dropdown-title">selete state </span>
 			        <select value={this.state.value} onChange={this.handleChange}>
 			          {optionTemplate}

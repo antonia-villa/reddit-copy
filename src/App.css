@@ -62,6 +62,36 @@
   margin:0 5px;
   width:80%;
 }
+
+.loginButton {
+  float:right;
+  font-size:8px;
+}
+
+#menuarea{
+  width: 80%;
+  text-align: left;
+  border-bottom: 1px dotted gray;
+  padding: 5px 10px;
+  margin: 5px;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+select {
+  color: gray;
+  font-size: bold;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
 .login-form{
     display: inline-block;
     width: 19%;
@@ -96,9 +126,14 @@
 }
 .remember-me a{
   margin-left:2em;
+  color: black;
+}
+
+input[type="text"]{
+  color: gray;
 }
 .login-form-line input[type="submit"]{
-  width:15%!important;
+  margin-right: 10px;
   font-size:8px;
   margin-left:5em;
   color:black;
