@@ -140,21 +140,31 @@ input[type="text"]{
 }
 
 /*Article items*/
-.article{
-  width:100%;
-  border:1px solid black;
+.article-index{
+  list-style: none;
+  display: inline-block;
+  height: 100%;
   position: relative;
-  height:80px;
+  top: -2em;
+}
+.article-index h2{
+  font-weight:200;
+  font-size:1em;
+  color:#c6c6c6;
+}
+.article{
+  width: 98%;
+  position: relative;
+  height: 80px;
   text-align: left;
-  margin-top:1em;
-
+  margin-top: 1em;
+  margin-left: 1.2em;
 }
 .thumbnail-wrapper{
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 100%;
   display: inline-block;
-  margin-top:1em;
-  margin-left:1em;
+  margin-left: 1em;
   overflow: hidden;
 }
 .thumbnail{
@@ -167,6 +177,10 @@ input[type="text"]{
   font-size: 1em;
   color: #0000ff;
   width: 79%;
+  position: absolute;
+  height: 100%;
+  top: .5em;
+  overflow: scroll;
 }
 
 .article-container{

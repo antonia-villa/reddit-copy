@@ -22,7 +22,7 @@ class App extends Component {
     }).then((json)=>{
       let items = json.data.children;
       for(let i =0;i<items.length;i++){
-        allArticles.push(<Article imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
+        allArticles.push(<Article articleIndex={i+1} imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
       }
       this.setState({
         articles:allArticles
