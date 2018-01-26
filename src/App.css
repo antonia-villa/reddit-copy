@@ -69,6 +69,22 @@
     height: 100%;
     position: absolute;
     right: 5px;
+}
+
+#menuarea {
+  border-bottom: 1px dotted gray;
+  padding: 5px 10px;
+  margin: 5px;
+  overflow: hidden;
+  font-size: larger;
+  height: 26px;
+  width: 80%;
+  text-align: left;
+  bottom: 0;
+}
+
+.dropdown-title {
+  color: black;
 
 }
 .form-search{
@@ -139,4 +155,4 @@
   height:100%;
   padding:0;
 }
-/*end article items*/
+
