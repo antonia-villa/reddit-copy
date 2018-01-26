@@ -22,10 +22,14 @@ class App extends Component {
     }).then((json)=>{
       let items = json.data.children;
       for(let i =0;i<items.length;i++){
+        try{
         let postTime = parseFloat(items[i].data.created_utc) *1000;
         let currentTime = new Date();
         let timeSincePost = parseInt(((currentTime-postTime)/(1000*60*60))%24);
         allArticles.push(<Article postLink={items[i].data.permalink} subreddit={items[i].data.subreddit} votes={items[i].data.score} author={items[i].data.author} hours={timeSincePost} articleIndex={i+1} imgSrc={items[i].data.preview.images[0].source.url} title={items[i].data.title} />);
+        }catch(e){
+          console.log("Piece missing from json reponse. Skipping this post");
+        }
       }
       this.setState({
         articles:allArticles
