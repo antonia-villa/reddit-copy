@@ -10,7 +10,7 @@ class Banner extends Component {
 					<div className="login-form-line">
 						<input className="login-info" type="text" value="username" placeholder="username" />
 						<input className="login-info" type="text" value="password" placeholder="password" />
-						<div class="remember-me">
+						<div className="remember-me">
 							<input type="checkbox" value="remember me" />
 							<a href="#">reset</a> 
 							<a href="#">password</a>
