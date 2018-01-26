@@ -4,7 +4,7 @@ class Title extends Component {
 	render(){
 		return(
 			
-			<li className="article-title">{this.props.title}</li>
+			<h2 className="article-title">{this.props.title}</h2>
 
 		)
 	}

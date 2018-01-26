@@ -140,7 +140,7 @@ input[type="text"]{
 }
 
 /*Article items*/
-.article-index{
+.article-index,.article-votes{
   list-style: none;
   display: inline-block;
   height: 100%;
@@ -150,6 +150,11 @@ input[type="text"]{
 .article-index h2{
   font-weight:200;
   font-size:1em;
+  color:#c6c6c6;
+}
+.article-votes h3{
+  font-size: 1em;
+  margin: 0px 5px 0 30px;
   color:#c6c6c6;
 }
 .article{
@@ -178,11 +183,19 @@ input[type="text"]{
   color: #0000ff;
   width: 79%;
   position: absolute;
-  height: 100%;
+  height: 50%;
   top: .5em;
   overflow: scroll;
 }
-
+.article-publish-info{
+  list-style: none;
+  bottom: 0;
+  position: absolute;
+  left: 15.5em;
+}
+.article-publish-info a,.article-publish-info h3{
+  font-size:1em;
+}
 .article-container{
   width:80%;
 }
